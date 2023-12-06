@@ -52,6 +52,8 @@ public class ScrolAudio : MonoBehaviour
             mySlider.value = audioSource.time;
         }
 
+
+
         //if (Input.GetMouseButtonDown(0))
         //{
         //    // ѕолучаем позицию мыши в мировых координатах
