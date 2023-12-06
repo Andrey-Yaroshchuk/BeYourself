@@ -42,6 +42,11 @@ public class ScrolAudio : MonoBehaviour
     private void Update()
     {
         textTime.text = FormatTime(audioSource.time);
+        if(mySlider.value == audioSource.clip.length)
+        {
+            audioSource.time = 0;
+            audioSource.Play();
+        }
         if (isPlay == false)
         {
             mySlider.value = audioSource.time;
